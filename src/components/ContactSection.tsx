@@ -1,6 +1,7 @@
 import { useState, FormEvent } from "react";
 import { Send, Loader2, CheckCircle, AlertCircle, Github, Linkedin } from "lucide-react";
 import { personalInfo } from "@/data/portfolio";
+import { supabase } from "@/integrations/supabase/client";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -59,25 +60,21 @@ const ContactSection = () => {
     setStatus("loading");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+      const { data, error } = await supabase.functions.invoke("send-contact", {
+        body: {
           name: formData.name.trim(),
           email: formData.email.trim(),
           message: formData.message.trim(),
-        }),
+        },
       });
 
-      if (!response.ok) {
-        throw new Error("Error al enviar el mensaje");
+      if (error) {
+        throw new Error(error.message || "Error al enviar el mensaje");
       }
 
       setStatus("success");
       setFormData({ name: "", email: "", message: "", honeypot: "" });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Contact form error:", error);
       setStatus("error");
       setErrorMessage("Hubo un error al enviar tu mensaje. Por favor, intenta nuevamente.");
