@@ -34,14 +34,14 @@ export interface Experience {
 
 export const personalInfo = {
   name: "María Fernanda Moreno",
-  role: "Desarrolladora Full-Stack Jr (MERN) | Automation (n8n) | IA aplicada",
-  subtitle: "Desarrollo sitios web y proyectos MERN. Automatizo procesos con n8n integrando Google Workspace e IA para reducir tareas manuales y mejorar el seguimiento.",
+  role: "Desarrolladora Frontend | Automation (n8n) | IA aplicada",
+  subtitle: "Desarrollo Sitios Web. Automatizo procesos con n8n integrando Google Workspace e IA para reducir tareas manuales y mejorar el seguimiento.",
   linkedin: "https://www.linkedin.com/in/mafetechdev",
   github: "https://github.com/MafeTech24",
-  initials: "MFM",
+  initials: "MF",
 };
 
-export const aboutText = `Soy Desarrolladora Full-Stack Jr en formación (MERN) con foco en automatización (n8n) e IA aplicada. Me definen la comunicación efectiva, el trabajo en equipo, la empatía y motivación, la eficiencia y organización y una fuerte orientación a la resolución de problemas. Disfruto transformar necesidades en soluciones claras, con seguimiento y documentación. Trabajo tanto en proyectos freelance como en colaboración con equipos, buscando siempre mejorar procesos y aportar valor medible.`;
+export const aboutText = `Soy Desarrolladora Front-End Jr en formación Full-Stack (MERN) con foco en automatización (n8n) e IA aplicada. Me definen la comunicación efectiva, el trabajo en equipo, la empatía y motivación, la eficiencia y organización y una fuerte orientación a la resolución de problemas. Disfruto transformar necesidades en soluciones claras, con seguimiento y documentación. Trabajo tanto en proyectos freelance como en colaboración con equipos, buscando siempre mejorar procesos y aportar valor medible.`;
 
 export const softSkills = [
   "Comunicación efectiva",
@@ -75,27 +75,28 @@ export const techSkills: Skill[] = [
 
 export const education: Education[] = [
   // Degrees
-  {
+  /*{
     title: "Licenciatura en Producción de Bio-Imágenes",
     institution: "Universidad Nacional de Córdoba",
     year: "2004",
     category: "degree",
-  },
+  },*/
   {
     title: "Carrera Fullstack (MERN)",
     institution: "Coderhouse",
-    year: "2024 – 2026",
+    year: "2024 – Actualidad",
     category: "degree",
   },
-  {
-    title: "Programador Fullstack Java",
-    institution: "Programa Codo a Codo 4.0",
-    year: "2023",
-    category: "degree",
-  },
+ 
   // IA & Automation
   {
     title: "Carrera de AI Automation",
+    institution: "Coderhouse",
+    year: "Enero 2026",
+    category: "ia",
+  },
+  {
+    title: "Curso de Creación de Productos desde Cero con IA (Vibe Coding)",
     institution: "Coderhouse",
     year: "Enero 2026",
     category: "ia",
@@ -112,18 +113,7 @@ export const education: Education[] = [
     year: "2025-2026",
     category: "ia",
   },
-  {
-    title: "Vibe Coding",
-    institution: "Coderhouse",
-    year: "En curso",
-    category: "ia",
-  },
-  {
-    title: "Curso de Creación de Productos desde Cero con IA",
-    institution: "Coderhouse",
-    year: "Enero 2026",
-    category: "ia",
-  },
+  
   {
     title: "Inmersión de IA con Google Gemini",
     institution: "Alura Latam",
@@ -131,8 +121,8 @@ export const education: Education[] = [
     category: "ia",
   },
   // Diplomas & Courses
-  {
-    title: "Diplomatura en E-commerce, Marketing Digital y Redes Sociales",
+ /**  {
+   title: "Diplomatura en E-commerce, Marketing Digital y Redes Sociales",
     institution: "UTN Córdoba",
     year: "2021",
     category: "diploma",
@@ -142,19 +132,13 @@ export const education: Education[] = [
     institution: "Coderhouse",
     year: "2025",
     category: "course",
-  },
-  {
-    title: "Oracle Next Education – ONE (Oracle + Alura Latam)",
-    institution: "Programa de Formación en Tecnología y Empleabilidad",
-    year: "2025 – Actualidad",
-    category: "course",
-  },
+  }, **/
 ];
 
 export const experiences: Experience[] = [
   {
     title: "Freelance Web Developer (Frontend)",
-    company: "MERN (proyectos)",
+    company: "Proyectos Independientes",
     period: "Dic 2024 – Actualidad",
     description: "Desarrollo y mantenimiento de sitios web para clientes. Integración de formularios, analítica y assets. Debugging y documentación funcional.",
   },
@@ -165,7 +149,7 @@ export const experiences: Experience[] = [
     description: "Gestión integral de operaciones: soporte al cliente, priorización de urgencias, trazabilidad de pedidos, comunicación clara y resolución rápida de problemas.",
   },
   {
-    title: "Atención al Paciente",
+    title: "Realización de Estudios de Imágenes Médicas",
     company: "IMC – Servicio de Técnicas No Invasivas",
     period: "2012 – 2018",
     description: "Trato directo, soporte y contención a pacientes. Gestión y coordinación de prácticas médicas y turnos.",
@@ -179,6 +163,7 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
+  
   {
     id: "cristianmartinez",
     title: "Sitio Web Profesional – Abogado Cristian Martínez",
@@ -234,24 +219,23 @@ export const projects: Project[] = [
     contribution: "Arquitectura de componentes, routing y manejo de estado.",
     repoUrl: "https://github.com/MafeTech24/ProyectoFinalMoreno.git",
   },
-  {
-    id: "api-rest-1",
-    title: "API REST (Node/Express)",
-    problem: "En carga / Próximamente",
-    solution: "En carga / Próximamente",
-    stack: ["Node.js", "Express", "MongoDB"],
-    contribution: "En carga / Próximamente",
-    isPlaceholder: true,
-  },
-  {
-    id: "api-rest-2",
-    title: "API REST (Node/Express)",
-    problem: "En carga / Próximamente",
-    solution: "En carga / Próximamente",
-    stack: ["Node.js", "Express", "MongoDB"],
-    contribution: "En carga / Próximamente",
-    isPlaceholder: true,
-  },
+  //{
+    //id: "api-rest-1",
+    //title: "API REST (Node/Express)",
+    //problem: "En carga / Próximamente",
+    //solution: "En carga / Próximamente",
+    //stack: ["Node.js", "Express", "MongoDB"],
+    //contribution: "En carga / Próximamente",
+    //isPlaceholder: true
+  //},
+  // { id: "api-rest-2",
+  //  title: "API REST (Node/Express)",
+  //  problem: "En carga / Próximamente",
+  //  solution: "En carga / Próximamente",
+  //  stack: ["Node.js", "Express", "MongoDB"],
+  //  contribution: "En carga / Próximamente",
+  //  isPlaceholder: true
+  //},
 ];
 
 export const navLinks = [
