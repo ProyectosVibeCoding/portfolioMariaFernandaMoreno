@@ -163,12 +163,21 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
-  
+  {
+  id: "portfolio-vibe-coding-lovable",
+  title: "Portfolio Profesional – MafeTech (Vibe Coding con Lovable)",
+  problem: "Necesitaba un Portfolio Tech Moderno para presentar mi perfil y proyectos.",
+  solution: "One-page responsive con secciones claras y formulario de contacto funcional.",
+  stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "GitHub", "Lovable (IA)"],
+  contribution: "Definí estructura y contenido, guié el vibe coding con prompts y ajusté código y README.",
+  liveUrl: "https://mafetech.vercel.app/",
+  repoUrl: "https://github.com/ProyectosVibeCoding/portfolioMariaFernandaMoreno",
+},
   {
     id: "cristianmartinez",
     title: "Sitio Web Profesional – Abogado Cristian Martínez",
-    problem: "El cliente necesitaba una presencia web profesional para captar clientes.",
-    solution: "Sitio web moderno con formulario de contacto y diseño profesional.",
+    problem: "El cliente necesitaba presencia web profesional para captar clientes.",
+    solution: "Sitio web moderno con todos los medios de Contacto y diseño profesional.",
     stack: ["HTML", "CSS", "JavaScript", "Vercel"],
     contribution: "Desarrollo completo, relevamiento de necesidades y publicación.",
     liveUrl: "https://cristianmartinez-abogado.vercel.app/",
@@ -176,7 +185,7 @@ export const projects: Project[] = [
   {
     id: "silviamariella",
     title: "Sitio Web – Silvia Mariella & José Tomás",
-    problem: "Necesidad de página web para evento/proyecto personal.",
+    problem: "Necesidad sitio web para eventos y proyecto personal.",
     solution: "Landing page elegante con diseño personalizado.",
     stack: ["HTML", "CSS", "JavaScript", "Vercel"],
     contribution: "Diseño, desarrollo y deploy en Vercel.",
